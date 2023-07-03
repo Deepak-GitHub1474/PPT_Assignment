@@ -1,0 +1,72 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body{
+    /* overflow: hidden; */
+}
+
+:root {
+    --bg-color-light-blue: #72a7f0;
+    --bg-color-gray: #808080;
+    --bg-color-dark-gray: #2c2b2b;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-el{
+    height: 10vh;
+}
+
+.first-header-element {
+    width: 30vw;
+    background-color: var(--bg-color-light-blue);
+}
+
+.second-header-element {
+    width: 70vw;
+    background-color: var(--bg-color-gray)
+}
+
+.main-container{
+    margin: 10px 0;
+}
+
+.first-main-element {
+    /* height: 50vh; */
+    height: 48vh;
+    background-color: var(--bg-color-dark-gray);
+    margin-bottom: 10px;
+}
+
+.second-main-element {
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.second-main-element div{
+    background-color: var(--bg-color-light-blue);
+}
+
+.footer-container{
+    /* height: 15vh; */
+    height: 10vh;
+    background-color: var(--bg-color-gray);
+}
+
+/* Media Query Smart Phone */
+
+@media (max-width: 767px){
+    .second-main-element {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

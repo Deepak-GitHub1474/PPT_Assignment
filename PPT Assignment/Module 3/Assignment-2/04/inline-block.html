@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-block</title>
+</head>
+<style>
+    h1{
+        display: inline-block;
+        width: 200px;
+        border: 1px solid #ff0000;
+    }
+    p{
+        display: inline-block;
+    }
+</style>
+<body>
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
+
+<!-- Both p tag and h1 tag are block elements, but
+     when we set the display property inline-block
+     it allows to render eachother in their left and right(i.e. in same line).
+     If we will not set this inline-block property first h1 will render and then 
+     p will render in next line. Here height and width property will work and element
+     will occupy the space as much as height and width are set.
+-->

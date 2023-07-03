@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing</title>
+</head>
+<style>
+    .content-box-example {
+        box-sizing: content-box;
+        width: 200px;
+        padding: 20px;
+        border: 2px solid #0000ff;
+    }
+    .border-box-example {
+        box-sizing: border-box;
+        width: 200px;
+        padding: 20px;
+        border: 2px solid #ff0000;
+    }
+</style>
+
+<body>
+    <div class="content-box-example">Content Box Example</div>
+    <div class="border-box-example">Border Box Example</div>
+</body>
+
+</html>
+
+<!-- With box-sizing: content-box, the first element's total width will be greater than 200px
+     because the padding and border are added to the specified width. -->
+
+<!-- With box-sizing: border-box, the second element's total width will be exactly 200px
+     because the specified width includes the padding and border. -->
