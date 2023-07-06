@@ -34,12 +34,12 @@ console.log(person.name); // Output: Deepak
 
 Example 3:
 
-// class Product {
-//     constructor(p){      
-//         this.name = p;    // this key word is the same object which we are calling Product{}
-//     }
-// };
-// const p = new Product("iPhone");
-// console.log(p);
+ class Product {
+     constructor(p){      
+         this.name = p;    // this key word is the same object which we are calling Product{}
+     }
+ };
+ const p = new Product("iPhone");
+ console.log(p);
 
 

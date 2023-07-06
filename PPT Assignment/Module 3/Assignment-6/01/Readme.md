@@ -26,13 +26,13 @@ to the constructor are used to initialize the object's properties.
 
 Example-2:
 
-// class Product {
-//     constructor(){                             // Default constructor
-//         console.log("This is constructor");
-//     }
+ class Product {
+     constructor(){                             // Default constructor
+         console.log("This is constructor");
+    }
 
-//     display(){
-//         console.log("This is a product");
-//     }
-// };
-// const p = new Product();
+    display(){
+         console.log("This is a product");
+     }
+ };
+ const p = new Product();
