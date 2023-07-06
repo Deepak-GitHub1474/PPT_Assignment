@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: manrope, sans-serif;
+}
+
+/* Heade Section */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    background-color: #393939;
+    height: 12vh;
+}
+
+img[alt="nav-logo"] {
+    width: 65px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+    font-size: 0.98rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-btn {
+    width: 110px;
+    height: 36px;
+    font-size: 0.98rem;
+    background-color: #5555da;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #7979d3;
+}
+
+.fa-bars {
+    visibility: hidden;
+    color: #fff;
+}
+
+.fa-circle-xmark {
+    color: #fff;
+}
+
+/* Main Section */
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.main-container div h2 {
+    font-size: 2rem;
+}
+
+.main-container div h1 {
+    color: #1893f7;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+
+.main-container div h3 {
+    color: #1893f7;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.main-container div p {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    max-width: 480px;
+    opacity: 0.9;
+}
+
+img[alt="Banking_partners-img"] {
+    width: 380px;
+}
+
+img[alt="apply-img"] {
+    width: 230px;
+    cursor: pointer;
+}
+
+.landing-page-video {
+    width: 36vw;
+}
+
+/* Media Query */
+
+@media (max-width: 280px) {
+    img[alt="Banking_partners-img"] {
+        max-width: 200px;
+    }
+
+    img[alt="apply-img"] {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fa-bars {
+        visibility: visible;
+    }
+
+    .nav-ul {
+        visibility: hidden;
+        flex-direction: column;
+        list-style: none;
+        gap: 2.3rem;
+        background-color: #fff;
+        color: #000000;
+        position: fixed;
+        top: 5.63rem;
+        right: 1.6rem;
+        width: 86vw;
+        z-index: 1;
+        padding-top: 1.5rem;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-container {
+        margin-top: 2rem;
+    }
+
+    .main-container-first-content {
+        margin: 0 0.7rem;
+    }
+
+    .main-container div p {
+        width: 100%;
+        font-size: 0.88rem;
+    }
+
+    img[alt="Banking_partners-img"] {
+        width: 330px;
+    }
+
+    .landing-page-video {
+        width: 80vw;
+    }
+}
