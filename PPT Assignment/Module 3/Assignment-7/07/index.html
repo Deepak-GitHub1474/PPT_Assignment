@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <form class="form-elements">
+                <h2>Publish Your Story</h2>
+                <input type="text" name="title" id="title" placeholder="TITLE OF STORY">
+                <input type="url" name="link" id="link" placeholder="Enter Image URL">
+                <input type="text" name="author" id="author" placeholder="Enter Author Name">
+                <input type="text" name="category" id="category" placeholder="Category Eg Educational">
+                <textarea name="story" id="story" cols="30" rows="10"></textarea>
+                <button id="submit-story-btn">Submit My Story</button>
+            </form>
+        </div>
+
+        <!-- Story Live Preview Section -->
+        <div class="live-container">
+            <div class="story-image-container">
+                <img src="https://bigthink.com/wp-content/uploads/2022/10/AdobeStock_537881222.jpeg" id="story-img">
+            </div>
+            <div class="story-container">
+                <h2 id="story-title">Quantum Traveler</h2>
+                <h3 id="story-content-category">Sceience-Fictional</h3>
+                <p id="story-content">
+                    In 2207, humans unlocked quantum entanglement for interstellar travel. The Stellaris ship, powered by the Quantum Engine, vanished and reappeared in Andromeda. Alien worlds amazed the crew, from lush jungles to desolate wastelands. They encountered the advanced Veridians, who shared their knowledge. Humanity flourished, expanding across the stars. They discovered the Dark Nexus, a destructive force. Captain Alex Morrison led the Quantum Travelers against it. They protected the intergalactic alliance, forging alliances and facing challenges. Their mission pushed the limits of science and human spirit. "Quantum Traveler" tells a tale of adventure, exploration, and triumph in a cosmos of boundless possibilities.
+                </p>
+                <h4 id="story-author">Deepak Chaudhary</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS External file -->
+    <script src="index.js"></script>
+</body>
+
+</html>

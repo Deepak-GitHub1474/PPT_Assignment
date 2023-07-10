@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2b247c;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.main-container h1{
+    opacity: 0.4;
+    font-size: 13rem;
+    font-variant: small-caps;
+}
+
+#clock-container{
+    background-color: #897aed;
+    color: #fff;
+    width: 90%;
+    max-width: 450px;
+    height: 200px;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#clock-container h2{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+#clock-container p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px){
+    .main-container h1{
+        font-size: 9rem;
+    }
+
+    #clock-container{
+        max-width: 350px;
+        height: 160px;
+    }
+
+    #clock-container h2{
+        font-size: 3.5rem;
+    }
+    
+    #clock-container p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .main-container h1{
+        font-size: 5rem;
+    }
+
+    #clock-container{
+        max-width: 250px;
+        height: 120px;
+    }
+
+    #clock-container h2{
+        font-size: 2rem;
+    }
+    
+    #clock-container p{
+        font-size: 1rem;
+    }
+}
