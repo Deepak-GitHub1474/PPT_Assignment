@@ -18,7 +18,4 @@ function getCurrentTime() {
     seconds.innerHTML = sec;
 }
 
-// Calling updateClock function initially to avoid delay to be more precision
-getCurrentTime() 
-
 setInterval(getCurrentTime, 1000);
