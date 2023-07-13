@@ -36,17 +36,22 @@
   In the child component, access the passed data by using the prop name.
 
   Example:
+  /*
 
      // Parent component
+
     function ParentComponent() {
     const data = "Hello, Child!";
     return <ChildComponent message={data} />;
     }
 
     // Child component
+
     function ChildComponent(props) {
     return <h2>{props.message}</h2>;
     }
+
+    */
 
   In this example, the ParentComponent passes the data as a prop called message to the ChildComponent. 
   The ChildComponent then accesses and displays the value of the prop.
