@@ -48,7 +48,7 @@
     // Child component
 
     function ChildComponent(props) {
-    return <h2>{props.message}</h2>;
+      `return <h2>{props.message}</h2>;`
     }
 
     */
@@ -120,9 +120,9 @@
     function ComponentWithFragments() {
     return (
         <>
-        <h1>Heading 1</h1>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
+        `<h1>Heading 1</h1>`
+        `<p>Paragraph 1</p>`
+        `<p>Paragraph 2</p>`
         </>
     )
     }
