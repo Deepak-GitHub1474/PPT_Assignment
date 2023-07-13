@@ -40,16 +40,16 @@
 
      // Parent component
 
-    function ParentComponent() {
-    const data = "Hello, Child!";
-    return <ChildComponent message={data} />;
-    }
+    `function ParentComponent() {`
+    `const data = "Hello, Child!";`
+    `return <ChildComponent message={data} />`;
+    `}`
 
     // Child component
 
-    function ChildComponent(props) {
+    `function ChildComponent(props) {`
       `return <h2>{props.message}</h2>;`
-    }
+ `   }`
 
     */
 
@@ -143,37 +143,37 @@
 
 -  If statements:
 
-    function MyComponent() {
-    if (condition) {
-        return <h1>Show when condition is true</h1>;
-    } else {
-        return <h1>Show when condition is false</h1>;
-    }
-    }
+    `function MyComponent() {`
+    `if (condition) {`
+        `return <h1>Show when condition is true</h1>;`
+    `} else {`
+        `return <h1>Show when condition is false</h1>;`
+    `}`
+    `}`
 
 -  Ternary Operator:
 
-    function MyComponent() {
-    return condition ? <h1>Show when condition is true</h1> : <h1>Show when condition is false</h1>;
-    }
+    `function MyComponent() {`
+    `return condition ? <h1>Show when condition is true</h1> : <h1>Show when condition is false</h1>;`
+    `}`
 
 -  Logical && operator:
 
-    function MyComponent() {
-    return condition && <h1>Show when condition is true</h1>;
-    }
+    `function MyComponent() {`
+    `return condition && <h1>Show when condition is true</h1>;`
+    `}`
 
 -  Element variables:
 
-    function MyComponent() {
-    let element;
-    if (condition) {
-        element = <h1>Show when condition is true</h1>;
-    } else {
-        element = <h1>Show when condition is false</h1>;
-    }
-    return element;
-    }
+    `function MyComponent() {`
+    `let element;`
+    `if (condition) {`
+        `element = <h1>Show when condition is true</h1>;`
+    `} else {`
+        `element = <h1>Show when condition is false</h1>;`
+    `}`
+    `return element;`
+    `}`
 
 
 
