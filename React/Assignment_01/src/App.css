@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+/* Navbar Styling */
+
+.header-container {
+  height: 15vh;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+li {
+  list-style: none;
+  width: 100px;
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.logout-btn{
+  background-color: #000;
+  color: #fff;
+  list-style: none;
+  width: 110px;
+  padding: 11px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.welcome-btn {
+  background-color: #6dd1b0;
+  color: #fff;
+  list-style: none;
+  width: 100px;
+  padding: 11px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Login/Register Styling */
+
+.form-container {
+  height: 400px;
+  width: 400px;
+  background-color: #2d2d2d;
+  margin: 3rem auto;
+  padding: 5rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-container h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.submit-btn {
+  border: none;
+  width: 89%;
+  padding: 0.7rem;
+  background-color: #f9632d;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-register-switch span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.link {
+  color: #f9632d;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* My-Blog Styling */
+
+.blogs-container {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.my-blog {
+  width: 250px;
+  min-height: 380px;
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.blog-by-id{
+  text-decoration: none;
+}
+
+.blogs-cover {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.blog-title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+.blog-title-content {
+  max-height: 80px;
+  overflow: auto;
+  text-align: center;
+}
+
+.my-blog p {
+  color: #dcdcdc;
+  margin-top: 0.4rem;
+}
+
+.read-btn {
+  color: #fff;
+  background-color: #f9632d;
+  width: 90%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 1rem;
+  cursor: pointer;
+}
+
+/* Add Blog Styling */
+
+.blog-container {
+  height: 400px;
+  width: 400px;
+  background-color: #2d2d2d;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-container h1 {
+  color: #f9632d;
+}
+
+.blog-container input,
+.story {
+  outline: none;
+  border: none;
+  width: 95%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.publish-blog-btn {
+  border: none;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #f9632d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* My Blog and BlogByID Styling */
+
+.blogs-by-id {
+  min-height: 425px;
+  width: 250px;
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+}
+
+.blogs-by-id p {
+  color: #dcdcdc;
+  margin-top: 0.4rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.blog-read-btn,
+.blog-edit-btn,
+.blog-delete-btn  {
+  color: #fff;
+  background-color: #f9632d;
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Update Blog Styling */
+
+.update-blog-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-right: 2rem;
+}
+
+.update-form-container {
+  height: 350px;
+  width: 300px;
+  background-color: #fff;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.update-form-container input,
+.update-form-container textarea {
+  border: 2px solid #767676;
+  width: 95%;
+  padding: 0.4rem;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.update-blog-btn,
+.close-blog-btn {
+  border: none;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #f9632d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
