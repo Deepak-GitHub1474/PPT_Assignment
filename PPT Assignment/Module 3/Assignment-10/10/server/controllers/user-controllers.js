@@ -103,7 +103,8 @@ exports.updateBlogByID = (req, res) => {
         {
             title: req.body.title,
             file: req.body.file,
-            description: req.body.description
+            description: req.body.description,
+            blog: req.body.blog
         }
     ).then(result => res.json("Success"))
      .catch(err => res.json(err))
