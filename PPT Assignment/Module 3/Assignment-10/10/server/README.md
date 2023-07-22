@@ -18,15 +18,14 @@
 
 ## API Endpoints
 
-- **POST /auth/register**: Register a new user.
-- **POST /auth/login**: Log in an existing user.
-- **GET /auth/logout**: Log out the user.
+- **POST /user/register**: Register a new user.
+- **POST /user/login**: Log in an existing user.
+- **GET /logout**: Log out the user.
 - **POST /blog/add**: Add a new blog.
 - **GET /blog**: Get all blogs.
 - **GET /blog/:blogID**: Get a blog by ID.
 - **PATCH /blog/:id**: Update a blog.
 - **DELETE /blog/:id**: Delete a blog.
-- **GET /user**: Get user information.
 
 - User Registration
   `POST /user/register`
