@@ -1,19 +1,19 @@
 import axios from "axios"
 import React, { useEffect, useState } from "react"
-import { useNavigate, useParams } from "react-router-dom"
-import MyBlog from "./MyBlog"
+import { Link, useNavigate, useParams } from "react-router-dom"
 
 export default function UpdateBlog() {
     const { id } = useParams()
     const [title, setTitle] = useState("")
     const [file, setFile] = useState("")
     const [description, setDescription] = useState("")
+    const [blog, setBlog] = useState("")
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        axios.patch(`http://localhost:5000/blog/${id}`, { title, file, description })
+        axios.patch(`http://localhost:5000/blog/${id}`, { title, file, description, blog })
             .then(res => {
                 if (res.data === "Success") {
                     navigate("/blog")
@@ -28,6 +28,7 @@ export default function UpdateBlog() {
                 setTitle(result.data.title)
                 setFile(result.data.file)
                 setDescription(result.data.description)
+                setBlog(result.data.blog)
             })
             .catch(err => console.log(err))
     }, [id])
@@ -35,7 +36,18 @@ export default function UpdateBlog() {
     return (
         <div>
             <div className="update-blog-container">
-                <MyBlog id={id}/>
+                <div className="blogs-container">
+                    <div className="my-blog">
+                        <img src={file} alt="" className="blogs-cover" />
+                        <p className="blog-title">
+                            <b>{title}</b>
+                        </p>
+                        <div className="blog-description">
+                            <p>{description}</p>
+                        </div>
+                        <Link to={`/readblog/${id}`}><button className="read-btn">Read</button></Link>
+                    </div>
+                </div>
                 <div>
                     <form className="update-form-container" onSubmit={handleSubmit}>
                         <input
@@ -56,13 +68,15 @@ export default function UpdateBlog() {
                             type="text"
                             name="blog-description"
                             placeholder="Type Short Description for Your Blog"
-                        />
-                        <textarea
-                            name="story"
-                            className="story"
-                            placeholder="Type Your Blog"
                             value={description}
                             onChange={e => setDescription(e.target.value)}
+                        />
+                        <textarea
+                            name="blog"
+                            className="blog"
+                            placeholder="Type Your Blog"
+                            value={blog}
+                            onChange={e => setBlog(e.target.value)}
                         ></textarea>
 
                         <button className="update-blog-btn">Update</button>

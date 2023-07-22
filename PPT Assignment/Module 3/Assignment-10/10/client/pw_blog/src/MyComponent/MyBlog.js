@@ -23,10 +23,10 @@ export default function MyBlog() {
                         <p className="blog-title">
                             <b>{blog.title}</b>
                         </p>
-                        <div className="blog-title-content">
+                        <div className="blog-description">
                             <p>{blog.description}</p>
                         </div>
-                        <button className="read-btn">Read</button>
+                        <Link to={`/readblog/${blog._id}`}><button className="read-btn">Read</button></Link>
                     </div>
                 </Link>
             ))}

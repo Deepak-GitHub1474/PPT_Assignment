@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { userContext } from "../App"
 
-export default function MyBlog() {
+export default function BlogByID() {
 
     const [blog, setBlog] = useState({})
     const navigate = useNavigate()
@@ -28,14 +28,14 @@ export default function MyBlog() {
         <div className="blogs-by-id">
             <img src={blog.file} alt="" className="blogs-cover" />
             <p className="blog-title"> <b>{blog.title}</b> </p>
-            <div className="blog-title-content">
+            <div className="blog-description">
                 <p>{blog.description}</p>
             </div>
 
             <div className="btn-container">
                 {user.email === blog.email ?
                     <>
-                        <Link to={`/updateblog/${blog._id}`} className="link-btn">
+                        <Link to={`/readblog/${blog._id}`} className="link-btn">
                             <button className="blog-read-btn">Read</button>
                         </Link>
                         <Link to={`/updateblog/${blog._id}`} className="link-btn">

@@ -11,6 +11,7 @@ import AddBlog from './MyComponent/AddBlog';
 import MyBlog from './MyComponent/MyBlog';
 import BlogByID from './MyComponent/BlogByID';
 import UpdateBlog from './MyComponent/UpdateBlog';
+import ReadBlog from './MyComponent/ReadBlog';
 
 export const userContext = createContext()
 
@@ -37,12 +38,14 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/user/register" element={<Register />} />
+            <Route path="/" element={<Login />} />
             <Route path="/user/login" element={<Login />} />
             <Route path="/blog" element={<Home />} />
             <Route path="/blog/add" element={<AddBlog />} />
             <Route path="/myblog" element={<MyBlog />} />
             <Route path="/blog/:blogID" element={<BlogByID />} />
             <Route path="/updateblog/:id" element={<UpdateBlog />} />
+            <Route path="/readblog/:blogID" element={<ReadBlog />} />
           </Routes>
         </BrowserRouter>
       </userContext.Provider>

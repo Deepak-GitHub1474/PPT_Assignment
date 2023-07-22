@@ -6,7 +6,7 @@ export default function AddBlog() {
     const [title, setTitle] = useState("");
     const [file, setFile] = useState("");
     const [description, setDescription] = useState("");
-    const [story, setStory] = useState("");
+    const [blog, setBlog] = useState("");
 
     const user = useContext(userContext);
 
@@ -16,6 +16,7 @@ export default function AddBlog() {
             title: title,
             file: file,
             description: description,
+            blog: blog,
             email: user.email
         };
 
@@ -58,8 +59,8 @@ export default function AddBlog() {
                     className="story"
                     rows="40"
                     placeholder="Type Your Blog"
-                    value={story}
-                    onChange={e => setStory(e.target.value)}
+                    value={blog}
+                    onChange={e => setBlog(e.target.value)}
                 >
                 </textarea>
                 <button className="publish-blog-btn">Publish Blog</button>

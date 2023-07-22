@@ -60,12 +60,13 @@ exports.userLogin = (req, res) => {
 
 // Add new blog
 exports.addNewBlog = (req, res) => {
-    const { title, description, file, email } = req.body;
+    const { title, description, file, blog, email } = req.body;
 
     PostModel.create({
         title: title,
         description: description,
         file: file,
+        blog: blog,
         email: email
     })
         .then(result => res.json("Success"))
@@ -87,6 +88,14 @@ exports.getBlogByID = (req, res) => {
         .catch(err => console.log(err))
 }
 
+// read blog by id
+exports.readBlogByID = (req, res) => {
+    const blogID = req.params.blogID
+    PostModel.findById({ _id: blogID })
+        .then(post => res.json(post))
+        .catch(err => console.log(err))
+}
+
 // Update blog by id
 exports.updateBlogByID = (req, res) => {
     PostModel.findByIdAndUpdate(
@@ -97,7 +106,7 @@ exports.updateBlogByID = (req, res) => {
             description: req.body.description
         }
     ).then(result => res.json("Success"))
-        .catch(err => res.json(err))
+     .catch(err => res.json(err))
 }
 
 // Delete Blog

@@ -21,6 +21,9 @@ route.get("/blog/", userController.getAllBlog);
 // Get Blog by ID
 route.get("/blog/:blogID", userController.getBlogByID);
 
+// Get Blog by ID
+route.get("/readblog/:blogID", userController.readBlogByID);
+
 // Update Blog 
 route.patch("/blog/:id", verifyUser, userController.updateBlogByID);
 
