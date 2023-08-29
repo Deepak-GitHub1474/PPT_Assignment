@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* overflow: hidden; */
+    background-color: #0e141e;
+    color: #fff;
+}
+
+/* Project 1 */
+
+.dark-mode-app {
+    background-color: #0e141e;
+    color: #fff;
+}
+
+.light-mode-app {
+    background-color: #fff;
+    color: #0e141e;
+}
