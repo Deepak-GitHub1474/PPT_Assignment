@@ -1,0 +1,77 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 320px;
+  height: 420px;
+  padding:5px 20px;
+  box-shadow: 0 0 5px #505050;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.instagram-logo {
+  width: 250px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3897f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #357ae8;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.links a {
+  color: #3897f0;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
